@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">MiviAndroidTest</string>
+
+    //Splash
+    <string name="welcome_to_nmivi">Welcome to \nMivi</string>
+
+    //Login
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="please_enter_email_address">Please enter email address</string>
+    <string name="please_enter_valid_email_address">Please enter valid email address</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="pwd_should_be_min_6_char">Password length should be minimum 6 characters</string>
+    <string name="email_not_registered_with_us">Email address is not registered with us</string>
+
+    //User Dashboard
+    <string name="subscription">Subscription</string>
+    <string name="data_balance">Data Balance :</string>
+    <string name="expiry_date">Expiry Date :</string>
+    <string name="auto_renewal">Auto Renewal :</string>
+    <string name="primary_subscription">Primary Subscription :</string>
+    <string name="products">Products</string>
+    <string name="name">Name :</string>
+    <string name="price">Price :</string>
+    <string name="unlimited_text">Unlimited Text :</string>
+    <string name="unlimited_talk">Unlimited Talk :</string>
+    <string name="unlimited_int_text">Unlimited International Text :</string>
+    <string name="unlimited_int_talk">Unlimited International Talk :</string>
+    <string name="trans_subscription">subscription</string>
+    <string name="trans_txt_data_balance">txt data balance</string>
+    <string name="trans_txt_expiry_date">txt expiry date</string>
+    <string name="trans_data_balance">data balance</string>
+    <string name="trans_expiry_date">expiry date</string>
+    <string name="trans_products">products</string>
+    <string name="trans_txt_pro_name">txt product name</string>
+    <string name="trans_txt_pro_price">txt product price</string>
+    <string name="trans_pro_name">product name</string>
+    <string name="trans_pro_price">product price</string>
+
+</resources>

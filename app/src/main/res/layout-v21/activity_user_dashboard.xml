@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="@dimen/dimen_15dp">
+
+    <TextView
+        android:id="@+id/txtUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSubscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:text="@string/subscription"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_18sp"
+        android:textStyle="bold"
+        android:transitionName="@string/trans_subscription"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtUserName" />
+
+    <ImageView
+        android:id="@+id/imgSubscription"
+        android:layout_width="@dimen/dimen_25dp"
+        android:layout_height="@dimen/dimen_25dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:src="@drawable/img_right"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtUserName" />
+
+    <TextView
+        android:id="@+id/txtSubDataBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/data_balance"
+        android:textColor="@color/colorAccent"
+        android:transitionName="@string/trans_txt_data_balance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtSubscription" />
+
+    <TextView
+        android:id="@+id/txtSubExpiryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/expiry_date"
+        android:textColor="@color/colorAccent"
+        android:transitionName="@string/trans_txt_expiry_date"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtSubDataBalance" />
+
+    <TextView
+        android:id="@+id/txtDataBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textColor="@android:color/black"
+        android:transitionName="@string/trans_data_balance"
+        app:layout_constraintLeft_toRightOf="@+id/txtSubscription"
+        app:layout_constraintTop_toBottomOf="@+id/txtSubscription" />
+
+    <TextView
+        android:id="@+id/txtExpiryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_15dp"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textColor="@android:color/black"
+        android:transitionName="@string/trans_expiry_date"
+        app:layout_constraintLeft_toRightOf="@+id/txtSubscription"
+        app:layout_constraintTop_toBottomOf="@id/txtDataBalance" />
+
+    <TextView
+        android:id="@+id/txtProducts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:text="@string/products"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_18sp"
+        android:textStyle="bold"
+        android:transitionName="@string/trans_products"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtExpiryDate" />
+
+    <ImageView
+        android:id="@+id/imgProducts"
+        android:layout_width="@dimen/dimen_25dp"
+        android:layout_height="@dimen/dimen_25dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:src="@drawable/img_right"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtExpiryDate" />
+
+    <TextView
+        android:id="@+id/txtProName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:text="@string/name"
+        android:textColor="@color/colorAccent"
+        android:transitionName="@string/trans_txt_pro_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProducts" />
+
+    <TextView
+        android:id="@+id/txtProPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/price"
+        android:textColor="@color/colorAccent"
+        android:transitionName="@string/trans_txt_pro_price"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProName" />
+
+    <TextView
+        android:id="@+id/txtProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:textColor="@android:color/black"
+        android:transitionName="@string/trans_pro_name"
+        app:layout_constraintLeft_toRightOf="@+id/txtProducts"
+        app:layout_constraintTop_toBottomOf="@id/txtProducts" />
+
+    <TextView
+        android:id="@+id/txtProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textColor="@android:color/black"
+        android:transitionName="@string/trans_pro_price"
+        app:layout_constraintLeft_toRightOf="@+id/txtProducts"
+        app:layout_constraintTop_toBottomOf="@+id/txtProductName" />
+
+</android.support.constraint.ConstraintLayout>

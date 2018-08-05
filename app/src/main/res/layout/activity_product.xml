@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_15dp">
+
+    <TextView
+        android:id="@+id/txtProducts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:text="@string/products"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtProName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_25dp"
+        android:text="@string/name"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProducts" />
+
+    <TextView
+        android:id="@+id/txtProPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/price"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProName" />
+
+    <TextView
+        android:id="@+id/txtProUnLtdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/unlimited_text"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProPrice" />
+
+    <TextView
+        android:id="@+id/txtProUnLtdTalk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/unlimited_talk"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProUnLtdText" />
+
+    <TextView
+        android:id="@+id/txtProUnLtdIntText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/unlimited_int_text"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProUnLtdTalk" />
+
+    <TextView
+        android:id="@+id/txtProUnLtdIntTalk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/unlimited_int_talk"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProUnLtdIntText" />
+
+    <TextView
+        android:id="@+id/txtProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_25dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toRightOf="@+id/txtProUnLtdIntTalk"
+        app:layout_constraintTop_toBottomOf="@id/txtProducts" />
+
+    <TextView
+        android:id="@+id/txtProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toRightOf="@+id/txtProUnLtdIntTalk"
+        app:layout_constraintTop_toBottomOf="@+id/txtProductName" />
+
+    <TextView
+        android:id="@+id/txtUnLtdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toRightOf="@+id/txtProUnLtdIntTalk"
+        app:layout_constraintTop_toBottomOf="@+id/txtProductPrice" />
+
+    <TextView
+        android:id="@+id/txtUnLtdTalk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toRightOf="@+id/txtProUnLtdIntTalk"
+        app:layout_constraintTop_toBottomOf="@+id/txtUnLtdText" />
+
+    <TextView
+        android:id="@+id/txtUnLtdIntText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toRightOf="@+id/txtProUnLtdIntTalk"
+        app:layout_constraintTop_toBottomOf="@+id/txtUnLtdTalk" />
+
+    <TextView
+        android:id="@+id/txtUnLtdIntTalk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toRightOf="@+id/txtProUnLtdIntTalk"
+        app:layout_constraintTop_toBottomOf="@+id/txtUnLtdIntText" />
+</android.support.constraint.ConstraintLayout>

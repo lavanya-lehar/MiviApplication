@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_15dp">
+
+    <TextView
+        android:id="@+id/txtSubscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:text="@string/subscription"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_18sp"
+        android:textStyle="bold"
+        android:transitionName="@string/trans_subscription"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtUserName" />
+
+    <TextView
+        android:id="@+id/txtSubDataBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_25dp"
+        android:text="@string/data_balance"
+        android:textColor="@color/colorAccent"
+        android:transitionName="@string/trans_txt_data_balance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtSubscription" />
+
+    <TextView
+        android:id="@+id/txtSubExpiryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/expiry_date"
+        android:textColor="@color/colorAccent"
+        android:transitionName="@string/trans_txt_expiry_date"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtSubDataBalance" />
+
+    <TextView
+        android:id="@+id/txtAutoRen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/auto_renewal"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtSubExpiryDate" />
+
+    <TextView
+        android:id="@+id/txtPrimSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/primary_subscription"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtAutoRen" />
+
+    <TextView
+        android:id="@+id/txtDataBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_25dp"
+        android:textColor="@android:color/black"
+        android:transitionName="@string/trans_data_balance"
+        app:layout_constraintLeft_toRightOf="@+id/txtPrimSub"
+        app:layout_constraintTop_toBottomOf="@+id/txtSubscription" />
+
+    <TextView
+        android:id="@+id/txtExpiryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_15dp"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textColor="@android:color/black"
+        android:transitionName="@string/trans_expiry_date"
+        app:layout_constraintLeft_toRightOf="@+id/txtPrimSub"
+        app:layout_constraintTop_toBottomOf="@id/txtDataBalance" />
+
+    <TextView
+        android:id="@+id/txtAutoRenewal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toRightOf="@+id/txtPrimSub"
+        app:layout_constraintTop_toBottomOf="@+id/txtExpiryDate" />
+
+    <TextView
+        android:id="@+id/txtPrimarySubscription"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_15dp"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toRightOf="@+id/txtPrimSub"
+        app:layout_constraintTop_toBottomOf="@id/txtAutoRenewal" />
+</android.support.constraint.ConstraintLayout>
